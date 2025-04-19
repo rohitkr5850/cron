@@ -19,7 +19,7 @@ async function runRedisOperations () {
         await client.quit();
         console.log("Redis connection closed");
     } catch (error) {
-        console.error("Error:", error);
+        console.error("E:", error);
     }
 }
 
