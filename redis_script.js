@@ -5,7 +5,7 @@ client.connect()
     .then(() => console.log('Connected to Redis'))
     .catch(err => console.error('Redis connection error:', err));
 
-async function runRedisOperations() {
+async function runRedisOperations () {
     try {
         await client.set("name", "John Doe");
         console.log("Stored key-value: name = John Doe");
